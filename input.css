@@ -2,11 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+
 * {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: 'Nunito', 'sans-serif';
+}
+
+h2 {
+    font-family: 'Montserrat', 'sans-serif';
+
+}
+li {
+    cursor: pointer;
+}
+.selected {
+ color: #c0301c;
 }
 
 .socials > li {
@@ -21,5 +32,3 @@
     transition: 300ms  ease-in-out;
 }
 
-
-  

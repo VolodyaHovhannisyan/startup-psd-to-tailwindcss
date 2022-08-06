@@ -14,7 +14,8 @@ module.exports = {
       }
     },
     fontFamily: {
-      'montserrat': ['Nunito', 'sans-serif']
+      'montserrat': ['Montserrat', 'sans-serif'],
+      'robotoslab': ['"Roboto Slab"', 'serif']
     }
   }
 }
