@@ -9,5 +9,17 @@
     font-family: 'Nunito', 'sans-serif';
 }
 
+.socials > li {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials > li:hover {
+    background: #c0301c;
+    transition: 300ms  ease-in-out;
+}
+
 
   

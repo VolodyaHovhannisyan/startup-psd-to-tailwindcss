@@ -562,20 +562,48 @@ video {
   position: absolute;
 }
 
-.col-span-1 {
-  grid-column: span 1 / span 1;
+.relative {
+  position: relative;
+}
+
+.top-\[7vw\] {
+  top: 7vw;
+}
+
+.bottom-\[0\] {
+  bottom: 0;
+}
+
+.top-\[12vw\] {
+  top: 12vw;
+}
+
+.left-\[5vw\] {
+  left: 5vw;
+}
+
+.right-\[0\] {
+  right: 0;
+}
+
+.top-\[6vw\] {
+  top: 6vw;
+}
+
+.top-\[6\.5vw\] {
+  top: 6.5vw;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .col-auto {
   grid-column: auto;
-}
-
-.row-span-1 {
-  grid-row: span 1 / span 1;
-}
-
-.row-start-1 {
-  grid-row-start: 1;
 }
 
 .mx-\[15vw\] {
@@ -593,19 +621,14 @@ video {
   margin-bottom: 15px;
 }
 
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+.my-\[70px\] {
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
-.my-\[20px\] {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.my-\[50px\] {
-  margin-top: 50px;
-  margin-bottom: 50px;
+.my-\[1\.5vh\] {
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
 }
 
 .mt-2 {
@@ -630,6 +653,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-\[750px\] {
@@ -664,6 +691,10 @@ video {
   height: 850px;
 }
 
+.h-\[20px\] {
+  height: 20px;
+}
+
 .w-\[100\%\] {
   width: 100%;
 }
@@ -680,25 +711,24 @@ video {
   width: 350px;
 }
 
-.auto-cols-auto {
-  grid-auto-columns: auto;
+.w-\[20px\] {
+  width: 20px;
 }
 
-.auto-cols-max {
-  grid-auto-columns: -webkit-max-content;
-  grid-auto-columns: max-content;
+.scale-100 {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-125 {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -725,12 +755,12 @@ video {
   gap: 1vw;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
 .gap-\[20px\] {
   gap: 20px;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .border-2 {
@@ -765,8 +795,27 @@ video {
   background-color: rgb(232 216 216 / var(--tw-bg-opacity));
 }
 
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f8f8f8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+}
+
 .bg-homesection {
   background-image: url('/assets/bg-home-section.png');
+}
+
+.bg-next {
+  background-image: url('/assets/next_icon.png');
 }
 
 .py-\[85px\] {
@@ -777,6 +826,31 @@ video {
 .px-\[15vw\] {
   padding-left: 15vw;
   padding-right: 15vw;
+}
+
+.px-\[50px\] {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.py-\[5px\] {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.px-\[12px\] {
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .pt-10 {
@@ -829,14 +903,44 @@ video {
   font-family: 'Nunito', 'sans-serif';
 }
 
+.socials > li {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials > li:hover {
+  background: #c0301c;
+  transition: 300ms  ease-in-out;
+}
+
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-red-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
 .hover\:text-red-900:hover {
   --tw-text-opacity: 1;
   color: rgb(127 29 29 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:block {
+  display: block;
+}
+
+.group:hover .group-hover\:flex {
+  display: flex;
+}
+
+.group:hover .group-hover\:opacity-40 {
+  opacity: 0.4;
 }
 
 
