@@ -13,22 +13,43 @@ h2 {
     font-family: 'Montserrat', 'sans-serif';
 
 }
+
 li {
     cursor: pointer;
 }
+
 .selected {
- color: #c0301c;
+    color: #c0301c;
 }
 
-.socials > li {
+.socials>li {
     height: 25px;
     width: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.socials > li:hover {
+
+.socials>li:hover {
     background: #c0301c;
-    transition: 300ms  ease-in-out;
+    transition: 300ms ease-in-out;
 }
 
+form input {
+    padding: 10px 10px;
+    border: solid rgb(107 114 128) 1px;
+    font-family: 'Roboto Slab', 'serif';
+    font-size: 12px;
+    background-color: transparent;
+    outline: none;
+
+}
+
+form input::placeholder {
+    text-transform: uppercase;
+}
+
+form input:focus {
+    border: solid 1px #c0301c;
+    box-shadow: none;
+}
